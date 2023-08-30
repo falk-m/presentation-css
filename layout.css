@@ -1,0 +1,60 @@
+body {
+    background-color: #DDEAF3;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+slide {
+    background-color: #fff;
+    border-bottom: 1px solid #DDEAF3;
+    padding: 1rem;
+}
+
+slide::after {
+    font-size: 0.65rem;
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    bottom: .4rem;
+    right: .4em;
+    background-color: #FFF;
+    border: 5px solid #31A1F5;
+    color: #31A1F5;
+    border-radius: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.flex > * {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.w-25 {
+    flex: 25% 1 0;
+}
+
+.w-50 {
+    flex: 50% 1 0;
+}
+
+.w-25 > img , .w-50 > img {
+    width: 100%;
+}
